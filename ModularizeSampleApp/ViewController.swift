@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import DependenciesModule
 
 class ViewController: UIViewController {
+	
+	var productOverviewViewControllerProvider : ProductOverviewViewControllerProvider!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		
+		let productOverviewViewController = self.productOverviewViewControllerProvider.getViewController()
+		
+		self.tabBarController?.addChild(productOverviewViewController)
 	}
-
-
 }
-

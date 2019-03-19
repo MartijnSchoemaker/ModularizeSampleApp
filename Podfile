@@ -14,7 +14,10 @@ target 'ModularizeSampleApp' do
 
 end
 
-target 'ModularizeSampleAppUITests' do
-	project 'ModularizeSampleApp'
+target 'ShoppingModule' do
+	project 'ShoppingModule/ShoppingModule'
+	
+	pod 'Swinject'
+	pod 'SwinjectStoryboard'
 
 end

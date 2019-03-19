@@ -5,6 +5,24 @@
       location = "group:ModularizeSampleApp.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/shoppingModule/ShoppingModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/wishlistModule/WishlistModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/basketModule/BasketModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/dependenciesModule/DependenciesModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/coreUIModule/CoreUIModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/coreModule/CoreModule.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
