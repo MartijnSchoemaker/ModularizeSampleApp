@@ -63,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				2B37FF2A22417885006E09B9 /* Shopping */,
-				2B37FF1422417822006E09B9 /* Basket */,
 				2B37FEFF2241762F006E09B9 /* dependenciesModule.h */,
 				2B37FF002241762F006E09B9 /* Info.plist */,
 			);
@@ -80,13 +79,6 @@
 				467DE083FAD59BBE0B3CC9F3 /* Pods_dependenciesModule.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2B37FF1422417822006E09B9 /* Basket */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Basket;
 			sourceTree = "<group>";
 		};
 		2B37FF2A22417885006E09B9 /* Shopping */ = {
