@@ -11,9 +11,6 @@
       location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/wishlistModule/WishlistModule.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/basketModule/BasketModule.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:/Users/martijnschoemaker/Projects/ModularizeSampleApp/dependenciesModule/DependenciesModule.xcodeproj">
    </FileRef>
    <FileRef
@@ -24,5 +21,14 @@
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ShoppingModule/ShoppingModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DependenciesModule/DependenciesModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WishlistModule/WishlistModule.xcodeproj">
    </FileRef>
 </Workspace>

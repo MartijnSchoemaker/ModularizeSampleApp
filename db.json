@@ -2,7 +2,8 @@
     "products" : [
         { 
             "id" : 123456,
-            "description" : "Product 1",
+            "name" : "Product 1",
+            "description" : "Description for product 1",
             "price" : 1030,
             "scratchPrice" : 1200
         }

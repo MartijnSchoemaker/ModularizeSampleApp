@@ -10,8 +10,8 @@ target 'ModularizeSampleApp' do
   pod 'Swinject'
 	pod 'SwinjectStoryboard'
 	pod 'RxSwift'
-	pod 'RxRetroSwift' 
-
+	pod 'Moya/RxSwift'
+	
 end
 
 target 'ShoppingModule' do
@@ -19,5 +19,22 @@ target 'ShoppingModule' do
 	
 	pod 'Swinject'
 	pod 'SwinjectStoryboard'
+	pod 'Moya/RxSwift'
 
+end
+
+target 'WishlistModule' do
+	project 'WishlistModule/WishlistModule'
+	
+	pod 'Swinject'
+	pod 'SwinjectStoryboard'
+	pod 'RxSwift'
+	
+end
+
+target 'DependenciesModule' do
+	project 'DependenciesModule/DependenciesModule'
+	
+	pod 'RxSwift'
+	
 end

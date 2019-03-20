@@ -18,6 +18,7 @@
 		2B37FF4B22418AE1006E09B9 /* SwinjectStoryboardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF4A22418AE1006E09B9 /* SwinjectStoryboardProvider.swift */; };
 		2B37FF4F22418CBE006E09B9 /* CoreUIModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B37FF4E22418CBE006E09B9 /* CoreUIModule.framework */; };
 		2B37FF5122418CDD006E09B9 /* DependenciesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B37FF5022418CDD006E09B9 /* DependenciesModule.framework */; };
+		2B37FF792242C896006E09B9 /* WishlistModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B37FF782242C896006E09B9 /* WishlistModule.framework */; };
 		525AEEE4B43182127A3F8948 /* Pods_ModularizeSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA21A13BB4C69506D014BB /* Pods_ModularizeSampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		2B37FF4C22418B1C006E09B9 /* coreUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = coreUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B37FF4E22418CBE006E09B9 /* CoreUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B37FF5022418CDD006E09B9 /* DependenciesModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DependenciesModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B37FF782242C896006E09B9 /* WishlistModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WishlistModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		540CA3D1746DE84C963DA868 /* Pods-ModularizeSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModularizeSampleApp.release.xcconfig"; path = "Target Support Files/Pods-ModularizeSampleApp/Pods-ModularizeSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		639B91D597C89747454277D8 /* Pods_ModularizeSampleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModularizeSampleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAA21A13BB4C69506D014BB /* Pods_ModularizeSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModularizeSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B37FF792242C896006E09B9 /* WishlistModule.framework in Frameworks */,
 				2B37FF5122418CDD006E09B9 /* DependenciesModule.framework in Frameworks */,
 				2B37FF4F22418CBE006E09B9 /* CoreUIModule.framework in Frameworks */,
 				2B37FF45224185D5006E09B9 /* ShoppingModule.framework in Frameworks */,
@@ -132,6 +135,7 @@
 		856DB9BA6C9A0DAF5D7AA0EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B37FF782242C896006E09B9 /* WishlistModule.framework */,
 				2B37FF5022418CDD006E09B9 /* DependenciesModule.framework */,
 				2B37FF4E22418CBE006E09B9 /* CoreUIModule.framework */,
 				2B37FF4C22418B1C006E09B9 /* coreUIModule.framework */,
@@ -163,7 +167,7 @@
 				2B37FE2C2241723A006E09B9 /* Sources */,
 				2B37FE2D2241723A006E09B9 /* Frameworks */,
 				2B37FE2E2241723A006E09B9 /* Resources */,
-				254A7C00A0C9880C4C2EC878 /* [CP] Embed Pods Frameworks */,
+				F3F9BB6C3BC50B9F1918FD0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,38 +255,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		254A7C00A0C9880C4C2EC878 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ModularizeSampleApp/Pods-ModularizeSampleApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRetroSwift/RxRetroSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRetroSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ModularizeSampleApp/Pods-ModularizeSampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6BF5C3802EF789197BD002B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +275,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3F9BB6C3BC50B9F1918FD0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ModularizeSampleApp/Pods-ModularizeSampleApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ModularizeSampleApp/Pods-ModularizeSampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
