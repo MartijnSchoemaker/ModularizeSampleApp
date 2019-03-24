@@ -9,10 +9,13 @@
 import RxSwift
 import Moya
 import UIKit
+import DependenciesModule
 
 class ProductOverviewViewController: UIViewController {
 	
 	@IBOutlet weak var tableView: UITableView!
+	
+	var wishlistRepository : WishlistRepository!
 	
 	let disposeBag = DisposeBag()
 	let products : Variable<[Product]> = Variable([Product]())
@@ -24,7 +27,11 @@ class ProductOverviewViewController: UIViewController {
 			self.tableView.reloadData()
 		}).disposed(by: self.disposeBag)
 		
-		self.loadProducts();		
+		wishlistRepository.wishlist.value.items.asObservable().subscribe(onNext: { _ in
+			self.tableView.reloadData()
+		}).disposed(by: self.disposeBag)
+		
+		self.loadProducts();
     }
 	
 	override func viewDidAppear(_ animated: Bool) {
@@ -60,13 +67,28 @@ extension ProductOverviewViewController : UITableViewDataSource, UITableViewDele
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: " ProductCell", for: indexPath) as! ProductTableViewCell
+		let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductTableViewCell
 		
 		let product = self.products.value[indexPath.row]
+		cell.product = product
 		
-		cell.nameLabel.text = product.name
-		cell.descriptionLabel.text = product.description
+		cell.addToWishlistButton.isHighlighted = self.wishlistRepository.contains(productId: product.id)
+		cell.addToWishlistButton.addTarget(self, action: #selector(onAddToWishlistButton(sender:)), for: .touchUpInside)
+		cell.addToWishlistButton.tag = product.id
 		
 		return cell
+	}
+	
+	@objc func onAddToWishlistButton(sender : UIButton) {
+		let productId = sender.tag
+		let product = self.products.value.first { $0.id == productId }!
+		
+		if (self.wishlistRepository.contains(productId: productId)) {
+			self.wishlistRepository.removeItem(withProductId: productId)
+		} else {
+			self.wishlistRepository.add(items: [
+				WishlistItem(productId : product.id, title: product.name, price: product.price, scratchPrice: product.scratchPrice)
+				])
+		}
 	}
 }

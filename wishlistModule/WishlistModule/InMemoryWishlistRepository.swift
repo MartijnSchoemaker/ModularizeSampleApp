@@ -10,7 +10,7 @@ import RxSwift
 import DependenciesModule
 
 struct InMemoryWishlistRepository: WishlistRepository {
-	var wishlist: Variable<Wishlist> = Variable(InMemoryWishlist())
+	var wishlist: Variable<Wishlist> = Variable(Wishlist())
 	
 	func add(items: [WishlistItem]) {
 		wishlist.value.items.value += items
@@ -23,15 +23,4 @@ struct InMemoryWishlistRepository: WishlistRepository {
 	func contains(productId: Int) -> Bool {
 		return wishlist.value.items.value.contains { $0.productId == productId }
 	}
-}
-
-struct InMemoryWishlist : Wishlist {
-	var items: Variable<[WishlistItem]> = Variable([WishlistItem]())
-}
-
-struct InMemoryWishlistItem : WishlistItem {
-	let productId : Int
-	let title : String
-	let price : Int
-	let scratchPrice : Int
 }

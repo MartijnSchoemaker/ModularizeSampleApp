@@ -11,6 +11,9 @@
 		2B37FF12224176AF006E09B9 /* DIRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF11224176AF006E09B9 /* DIRegistry.swift */; };
 		2B37FF772242C874006E09B9 /* InMemoryWishlistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF762242C874006E09B9 /* InMemoryWishlistRepository.swift */; };
 		2B37FF7E2242CAD7006E09B9 /* DependenciesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B37FF7D2242CAD7006E09B9 /* DependenciesModule.framework */; };
+		2B37FF8D2248069F006E09B9 /* Wishlist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B37FF8C2248069F006E09B9 /* Wishlist.storyboard */; };
+		2B37FF8F224806BA006E09B9 /* WishlistViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF8E224806BA006E09B9 /* WishlistViewControllerProvider.swift */; };
+		2B37FF922248084D006E09B9 /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF912248084D006E09B9 /* WishlistViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		2B37FF762242C874006E09B9 /* InMemoryWishlistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryWishlistRepository.swift; sourceTree = "<group>"; };
 		2B37FF7D2242CAD7006E09B9 /* DependenciesModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DependenciesModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B37FF812242D5C3006E09B9 /* Pods_ShoppingModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ShoppingModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B37FF8C2248069F006E09B9 /* Wishlist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wishlist.storyboard; sourceTree = "<group>"; };
+		2B37FF8E224806BA006E09B9 /* WishlistViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewControllerProvider.swift; sourceTree = "<group>"; };
+		2B37FF912248084D006E09B9 /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		33706CF7482D46ED6D12A924 /* Pods_WishlistModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WishlistModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		423620C86930BDF01433DAE8 /* Pods-WishlistModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WishlistModule.debug.xcconfig"; path = "Target Support Files/Pods-WishlistModule/Pods-WishlistModule.debug.xcconfig"; sourceTree = "<group>"; };
 		A71788A2761885D248766D2E /* Pods_wishlistModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wishlistModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,12 +66,31 @@
 		2B37FEE922417601006E09B9 /* WishlistModule */ = {
 			isa = PBXGroup;
 			children = (
+				2B37FF90224807CD006E09B9 /* Providers */,
+				2B37FF8B22480691006E09B9 /* UI */,
 				2B37FEEA22417601006E09B9 /* wishlistModule.h */,
 				2B37FEEB22417601006E09B9 /* Info.plist */,
 				2B37FF11224176AF006E09B9 /* DIRegistry.swift */,
 				2B37FF762242C874006E09B9 /* InMemoryWishlistRepository.swift */,
 			);
 			path = WishlistModule;
+			sourceTree = "<group>";
+		};
+		2B37FF8B22480691006E09B9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2B37FF8C2248069F006E09B9 /* Wishlist.storyboard */,
+				2B37FF912248084D006E09B9 /* WishlistViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2B37FF90224807CD006E09B9 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				2B37FF8E224806BA006E09B9 /* WishlistViewControllerProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		72E66234479F663F97CD5A1A /* Pods */ = {
@@ -159,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B37FF8D2248069F006E09B9 /* Wishlist.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B37FF8F224806BA006E09B9 /* WishlistViewControllerProvider.swift in Sources */,
+				2B37FF922248084D006E09B9 /* WishlistViewController.swift in Sources */,
 				2B37FF772242C874006E09B9 /* InMemoryWishlistRepository.swift in Sources */,
 				2B37FF12224176AF006E09B9 /* DIRegistry.swift in Sources */,
 			);

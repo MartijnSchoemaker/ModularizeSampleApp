@@ -10,23 +10,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Product Overview View Controller-->
+        <!--Shop-->
         <scene sceneID="Fto-4Y-PtS">
             <objects>
-                <viewController storyboardIdentifier="ProductOverview" id="BOF-xL-CYW" customClass="ProductOverviewViewController" customModule="ShoppingModule" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductOverview" title="Shop" id="BOF-xL-CYW" customClass="ProductOverviewViewController" customModule="ShoppingModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zJg-f8-diM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="leG-KN-XZP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" rowHeight="66" id="HEO-Je-Hcf" customClass="ProductTableViewCell" customModule="ShoppingModule" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" rowHeight="94" id="HEO-Je-Hcf" customClass="ProductTableViewCell" customModule="ShoppingModule">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HEO-Je-Hcf" id="JTd-MC-pd4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HEO-Je-Hcf" id="JTd-MC-pd4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WF-da-odE">
@@ -47,19 +47,30 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sF-EU-VAf">
+                                                    <rect key="frame" x="285" y="54" width="83" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="27" id="IMY-XV-dPH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="Add to wishlist"/>
+                                                    <state key="highlighted" title="Remove from wishlist"/>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="6WF-da-odE" firstAttribute="centerY" secondItem="JTd-MC-pd4" secondAttribute="centerY" id="2Xs-Pc-K2Q"/>
-                                                <constraint firstAttribute="bottom" secondItem="odv-cv-P9S" secondAttribute="bottom" constant="11.5" id="4vz-8M-CE6"/>
+                                                <constraint firstItem="6sF-EU-VAf" firstAttribute="top" secondItem="odv-cv-P9S" secondAttribute="bottom" id="8JR-3x-d8C"/>
                                                 <constraint firstItem="6WF-da-odE" firstAttribute="leading" secondItem="JTd-MC-pd4" secondAttribute="leadingMargin" id="ExJ-zM-bLT"/>
+                                                <constraint firstItem="6sF-EU-VAf" firstAttribute="trailingMargin" secondItem="JTd-MC-pd4" secondAttribute="trailingMargin" id="Foi-tx-74Y"/>
                                                 <constraint firstItem="odv-cv-P9S" firstAttribute="leading" secondItem="JTd-MC-pd4" secondAttribute="leadingMargin" id="OAc-ZP-vXm"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="6WF-da-odE" secondAttribute="trailing" id="Uuh-FD-BwS"/>
                                                 <constraint firstItem="odv-cv-P9S" firstAttribute="top" secondItem="6WF-da-odE" secondAttribute="bottom" constant="8" id="WIW-4i-ehu"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="odv-cv-P9S" secondAttribute="trailing" id="ayi-s7-Bo9"/>
                                                 <constraint firstItem="6WF-da-odE" firstAttribute="top" secondItem="JTd-MC-pd4" secondAttribute="topMargin" id="qI9-nK-CEF"/>
+                                                <constraint firstAttribute="bottom" secondItem="6sF-EU-VAf" secondAttribute="bottom" id="x2X-lk-Zuk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="addToWishlistButton" destination="6sF-EU-VAf" id="qZw-3L-K2z"/>
                                             <outlet property="descriptionLabel" destination="odv-cv-P9S" id="z2s-e8-Gjf"/>
                                             <outlet property="nameLabel" destination="6WF-da-odE" id="pwC-N1-r07"/>
                                         </connections>
@@ -80,14 +91,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Do0-bo-gcB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Shop" image="cart" id="xrq-JB-7AB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="leG-KN-XZP" id="6x9-m4-TIZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d50-uY-ruP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarItem systemItem="favorites" id="xrq-JB-7AB"/>
             </objects>
             <point key="canvasLocation" x="3370.4000000000001" y="-487.10644677661173"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cart" width="72" height="72"/>
+    </resources>
 </document>

@@ -16,6 +16,14 @@ public struct DIRegistry {
 		
 		container.register(WishlistRepository.self) { r in
 			InMemoryWishlistRepository()
-			}.inObjectScope(.container)
+		}.inObjectScope(.container)
+		
+		container.register(DependenciesModule.WishlistViewControllerProvider.self) { r in
+			WishlistViewControllerProvider(storyboardProvider: r.resolve(StoryboardProvider.self)!)
+		}.inObjectScope(.container)
+		
+		container.storyboardInitCompleted(WishlistViewController.self) { (r, c) in
+			c.wishlistRepository = r.resolve(WishlistRepository.self)!
+		}
 	}
 }

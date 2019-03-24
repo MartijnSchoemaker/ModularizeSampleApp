@@ -10,6 +10,7 @@
 		2B37FF012241762F006E09B9 /* dependenciesModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B37FEFF2241762F006E09B9 /* dependenciesModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B37FF2C22417896006E09B9 /* ProductOverviewViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF2B22417896006E09B9 /* ProductOverviewViewControllerProvider.swift */; };
 		2B37FF7C2242C8DA006E09B9 /* WishlistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF7B2242C8DA006E09B9 /* WishlistRepository.swift */; };
+		2B37FF8A2248065A006E09B9 /* WishlistViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF892248065A006E09B9 /* WishlistViewControllerProvider.swift */; };
 		BA3D5A49855DD638FF9B2B04 /* Pods_DependenciesModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA7E58B5428E8A1B6C3EE0 /* Pods_DependenciesModule.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		2B37FF712242C0B2006E09B9 /* CoreUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B37FF732242C0B2006E09B9 /* ShoppingModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShoppingModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B37FF7B2242C8DA006E09B9 /* WishlistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistRepository.swift; sourceTree = "<group>"; };
+		2B37FF892248065A006E09B9 /* WishlistViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WishlistViewControllerProvider.swift; path = ../../../dependenciesModule/DependenciesModule/Wishlist/WishlistViewControllerProvider.swift; sourceTree = "<group>"; };
 		467DE083FAD59BBE0B3CC9F3 /* Pods_dependenciesModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dependenciesModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9337F2ACFE2109475AC0610A /* Pods-DependenciesModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DependenciesModule.debug.xcconfig"; path = "Target Support Files/Pods-DependenciesModule/Pods-DependenciesModule.debug.xcconfig"; sourceTree = "<group>"; };
 		93AA7E58B5428E8A1B6C3EE0 /* Pods_DependenciesModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DependenciesModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				2B37FF7B2242C8DA006E09B9 /* WishlistRepository.swift */,
+				2B37FF892248065A006E09B9 /* WishlistViewControllerProvider.swift */,
 			);
 			path = Wishlist;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B37FF8A2248065A006E09B9 /* WishlistViewControllerProvider.swift in Sources */,
 				2B37FF7C2242C8DA006E09B9 /* WishlistRepository.swift in Sources */,
 				2B37FF2C22417896006E09B9 /* ProductOverviewViewControllerProvider.swift in Sources */,
 			);

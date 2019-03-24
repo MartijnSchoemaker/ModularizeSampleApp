@@ -16,14 +16,22 @@ public protocol WishlistRepository {
 	func contains(productId: Int) -> Bool
 }
 
-public protocol Wishlist {
-	var items : Variable<[WishlistItem]> { get }
+public struct Wishlist {
+	
+	public init() {}
+	public let items : Variable<[WishlistItem]> = Variable([WishlistItem]())
 }
 
-public protocol WishlistItem  {
+public struct WishlistItem  {
+	public let productId : Int
+	public let title : String
+	public let price : Int
+	public let scratchPrice : Int
 	
-	var productId : Int { get }
-	var title : String { get }
-	var price : Int { get }
-	var scratchPrice : Int { get }
+	public init(productId: Int, title: String, price: Int, scratchPrice: Int) {
+		self.productId = productId
+		self.title = title
+		self.price = price
+		self.scratchPrice = scratchPrice
+	}
 }

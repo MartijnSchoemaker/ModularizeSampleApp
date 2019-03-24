@@ -13,12 +13,13 @@ import CoreUIModule
 public struct DIRegistry {
 	
 	public static func setup(_ container : Container) {
-		// MARK : Repository Registry
 		
 		container.register(DependenciesModule.ProductOverviewViewControllerProvider.self) { r in
 			ProductOverviewViewControllerProvider(storyboardProvider: r.resolve(StoryboardProvider.self)!)
 			}.inObjectScope(.container)
-		
-		
+	
+		container.storyboardInitCompleted(ProductOverviewViewController.self) { r, c in
+			c.wishlistRepository = r.resolve(WishlistRepository.self)!
+		}
 	}
 }

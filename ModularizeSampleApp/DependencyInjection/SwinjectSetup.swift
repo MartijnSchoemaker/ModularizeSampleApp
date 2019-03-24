@@ -12,12 +12,15 @@ import DependenciesModule
 import CoreUIModule
 
 import ShoppingModule
+import WishlistModule
 
 extension SwinjectStoryboard {
 	@objc class func setup() {
 		
 		defaultContainer.storyboardInitCompleted(ViewController.self) { r,c in
-			c.productOverviewViewControllerProvider = r.resolve(ProductOverviewViewControllerProvider.self)
+			c.productOverviewViewControllerProvider = r.resolve(DependenciesModule.ProductOverviewViewControllerProvider.self)
+			c.wishlistViewControllerProvider = r.resolve(DependenciesModule.WishlistViewControllerProvider.self)
+			c.wishlistRepository = r.resolve(WishlistRepository.self)
 		}
 		
 		defaultContainer.register(StoryboardProvider.self) { r in
@@ -25,5 +28,6 @@ extension SwinjectStoryboard {
 		}
 		
 		ShoppingModule.DIRegistry.setup(defaultContainer)
+		WishlistModule.DIRegistry.setup(defaultContainer)
 	}
 }

@@ -17,6 +17,7 @@
 		2B37FF672242BD64006E09B9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF662242BD64006E09B9 /* Product.swift */; };
 		2B37FF6C2242BFD1006E09B9 /* ShoppingEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF6B2242BFD1006E09B9 /* ShoppingEndpoints.swift */; };
 		2B37FF882242D80D006E09B9 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B37FF872242D80D006E09B9 /* ProductTableViewCell.swift */; };
+		2B37FF9422481061006E09B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B37FF9322481061006E09B9 /* Assets.xcassets */; };
 		2E2D2897059351017CA261E2 /* Pods_ShoppingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B668D56DDEB6B1E43E9195A4 /* Pods_ShoppingModule.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		2B37FF662242BD64006E09B9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2B37FF6B2242BFD1006E09B9 /* ShoppingEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingEndpoints.swift; sourceTree = "<group>"; };
 		2B37FF872242D80D006E09B9 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		2B37FF9322481061006E09B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F9A74B08EC6290D92FC468C /* Pods-ShoppingModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingModule.debug.xcconfig"; path = "Target Support Files/Pods-ShoppingModule/Pods-ShoppingModule.debug.xcconfig"; sourceTree = "<group>"; };
 		84C17B4302E0955F63243A7C /* Pods-ShoppingModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppingModule.release.xcconfig"; path = "Target Support Files/Pods-ShoppingModule/Pods-ShoppingModule.release.xcconfig"; sourceTree = "<group>"; };
 		B668D56DDEB6B1E43E9195A4 /* Pods_ShoppingModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			children = (
 				2B37FF3422417A30006E09B9 /* ProductOverview */,
 				2B37FF32224179AF006E09B9 /* Shopping.storyboard */,
+				2B37FF9322481061006E09B9 /* Assets.xcassets */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B37FF9422481061006E09B9 /* Assets.xcassets in Resources */,
 				2B37FF33224179AF006E09B9 /* Shopping.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
